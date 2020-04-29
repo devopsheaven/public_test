@@ -24,3 +24,20 @@ def foo(a):  # NonCompliant
     if a == 1:
         return b
     return b
+
+# bugs
+
+class MyClass:
+    def instance_method():  # Noncompliant. "self" parameter is missing.
+        print("instance_method")
+
+    @classmethod
+    def class_method():  # Noncompliant. "cls" parameter is missing.
+        print("class_method")
+
+# vulnerabilities
+
+import tempfile
+
+filename = tempfile.mktemp() # Noncompliant
+tmp_file = open(filename, "w+")
