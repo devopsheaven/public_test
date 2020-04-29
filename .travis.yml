@@ -3,11 +3,11 @@ python:
   - "3.7"
 install:
   - pip install pytest
-script:
-  - pytest -q --cmdopt=pass
-  - sonar-scanner
 addons:
   sonarcloud:
     organization: "devopsheaven"
     token:
       secure: "uUCtAHylB1DGLvfJp46dHrGX8KfHwGewEi8mKbYItjbhW3Xu+nb/z8ZBJaytleQKPRDkVQjhZwXU0mIV7oIZGyFLuLAQNyhVccNiTU6VYc/wguplxqw/u4aLy0xSfoRkF0o9W5BPa2SeyqpUkhPtVkKBOZjG0Zt+UIDnHq7a3RZFFTPfmQMM4bIpedDwy9Sbswh8kXS2EYlak/0YnjjbcfXxlARbLCce2IG10QWEjYSbVF/eo2/WyIV+vCRJSl5bMM2HZypPjDTPEVlvDDriTSHu5pSrLUn1uXFExUaIZWuuDdNMGKK6NgvD/6ZiDhqI5N1JVdnrV+Bh0pCZFu0N5xgmeX9TV2uoIgVDV6i5xWzQAAHj2AG1hjcIinijOAdK3lDeLhgPhrvnCWC1f/4f7CX0qfrXku/XLpbobW2+g8l5806NBSJGYIHapedX9XMmMHjbVACcXnj2yXqo7UMD8WKvBgpDuox8qwpBzp+6TRHuMQBN6XifeiCb51D+p7M3zyXFJ02YzIiWO59rMHRc1shGBsks41hjYOEApkeVxJ+vmm3k5hFmU3+ExV7b8eNl6HWh0H24fcRkeb9sOz1IFkBsiyBgMwScQMji1wyWSq8zPte5MkF2g/L8H9ca6T5OsMsEwk8/NfjlwmODtw/MEiONrymIJAeSZdOwx26q2Pg="
+script:
+  - pytest -q --cmdopt=pass
+  - sonar-scanner
